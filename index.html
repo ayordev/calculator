@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Caculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <input class="display-input" type="text" id="display-input" />
+      <div class="middle-items">
+        <span class="icon">
+          <div class="clock"><i class="fa-regular fa-clock"></i></div>
+
+          <div class="ruler"><i class="fa-solid fa-ruler-horizontal"></i></div>
+          <div class="border-bottom"></div>
+        </span>
+
+        <div>
+          <span class="delete-button"
+            ><i class="fa-solid fa-delete-left" id="delete-btn"></i
+          ></span>
+        </div>
+      </div>
+      <div class="input-buttons" id="input-buttons">
+        <div class="buttons">
+          <button class="red-color" id="clear-btn">C</button>
+          <button class="green-color" id="bracket-btns">()</button>
+          <button class="green-color" id="text-buttons">%</button>
+          <button class="green-color" id="text-buttons">
+            <i
+              class="fa-solid fa-divide"
+              data-operator="&#247;"
+              accesskey="division"
+            ></i>
+          </button>
+        </div>
+        <div class="buttons">
+          <button id="text-buttons">7</button>
+          <button id="text-buttons">8</button>
+          <button id="text-buttons">9</button>
+          <button class="green-color" id="text-buttons">
+            <i class="fa-solid fa-xmark" data-operator="x"></i>
+          </button>
+        </div>
+        <div class="buttons">
+          <button id="text-buttons">4</button>
+          <button id="text-buttons">5</button>
+          <button id="text-buttons">6</button>
+          <button class="green-color" id="text-buttons">
+            <i class="fa-solid fa-minus" data-operator="-"></i>
+          </button>
+        </div>
+        <div class="buttons">
+          <button id="text-buttons">1</button>
+          <button id="text-buttons">2</button>
+          <button id="text-buttons">3</button>
+          <button class="green-color" id="text-buttons">
+            <i class="fa-solid fa-plus" data-operator="+"></i>
+          </button>
+        </div>
+        <div class="buttons">
+          <button id="plus-minus-btn">+/-</button>
+          <button id="text-buttons">0</button>
+          <button id="text-buttons">.</button>
+          <button class="equals-color" id="text-buttons">
+            <i class="fa-solid fa-equals" id="equal-sign"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="calc.js"></script>
+  </body>
+</html>
